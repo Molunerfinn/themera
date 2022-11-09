@@ -24,48 +24,48 @@ export const chakraColorAtom = atom<ThemeOverride["colors"]>((get) => {
 
     const scale = {
       50: Color(config.centerColor)
-        .lightness(50 + lightnessStep * 5)
+        .lighten(0.45)
         .rotate(lightRotateStep * 5)
         .saturate(lightSaturateStep * 5)
         .hex(),
       100: Color(config.centerColor)
-        .lightness(50 + lightnessStep * 4)
+        .lighten(0.4)
         .rotate(lightRotateStep * 4)
         .saturate(lightSaturateStep * 4)
         .hex(),
       200: Color(config.centerColor)
-        .lightness(50 + lightnessStep * 3)
+        .lighten(0.3)
         .rotate(lightRotateStep * 3)
         .saturate(lightSaturateStep * 3)
         .hex(),
       300: Color(config.centerColor)
-        .lightness(50 + lightnessStep * 2)
+        .lighten(0.2)
         .rotate(lightRotateStep * 2)
         .saturate(lightSaturateStep * 2)
         .hex(),
       400: Color(config.centerColor)
-        .lightness(50 + lightnessStep * 1)
+        .lighten(0.1)
         .rotate(lightRotateStep * 1)
         .saturate(lightSaturateStep * 1)
         .hex(),
       500: Color(config.centerColor).hex(), // use original color
       600: Color(config.centerColor)
-        .lightness(50 - darknessStep * 1)
+        .darken(0.1)
         .rotate(darkRotateStep * 1)
         .saturate(darkSaturateStep * 1)
         .hex(),
       700: Color(config.centerColor)
-        .lightness(50 - darknessStep * 2)
+        .darken(0.3)
         .rotate(darkRotateStep * 2)
         .saturate(darkSaturateStep * 2)
         .hex(),
       800: Color(config.centerColor)
-        .lightness(50 - darknessStep * 3)
+        .darken(0.5)
         .rotate(darkRotateStep * 3)
         .saturate(darkSaturateStep * 3)
         .hex(),
       900: Color(config.centerColor)
-        .lightness(50 - darknessStep * 4)
+        .darken(0.7)
         .rotate(darkRotateStep * 4)
         .saturate(darkSaturateStep * 4)
         .hex(),
