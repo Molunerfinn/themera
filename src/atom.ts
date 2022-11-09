@@ -48,7 +48,7 @@ export const chakraColorAtom = atom<ThemeOverride["colors"]>((get) => {
         .rotate(lightRotateStep * 1)
         .saturate(lightSaturateStep * 1)
         .hex(),
-      500: Color(config.centerColor).lightness(50).hex(),
+      500: Color(config.centerColor).hex(), // use original color
       600: Color(config.centerColor)
         .lightness(50 - darknessStep * 1)
         .rotate(darkRotateStep * 1)
